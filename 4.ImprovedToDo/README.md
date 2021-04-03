@@ -1,6 +1,4 @@
 # Improved ToDo
-&nbsp;
-
 ### How to run?
 > npm install
 
