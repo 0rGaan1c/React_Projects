@@ -1,4 +1,4 @@
-#TicTacToe App made using React.
+# TicTacToe App made using React.
 ### How to run?
 >npm install 
 &nbsp;
