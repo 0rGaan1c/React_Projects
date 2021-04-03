@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <title>ToDo-Classes</title>
+  </head>
+  <body>
+    <style>
+      li {
+        margin-bottom: 5px;
+        color: #333;
+      }
+    </style>
+    <div id="app"></div>
+
+    <script type="text/babel">
+      class ToDo extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            tasks: ["one"],
+            input: "",
+          };
+        }
+
+        render() {
+          return (
+            <div>
+              <h1>Tasks</h1>
+              <p>Number of Tasks: {this.state.tasks.length}</p>
+              <ul>
+                {this.state.tasks.map((task, i) => (
+                  <li key={i} data-index={i}>
+                    <button onClick={this.deleteTask}>✔️</button>
+                    {" " + task}
+                  </li>
+                ))}
+              </ul>
+              <div>
+                <input onChange={this.handleChange} value={this.state.input} />
+                <button onClick={this.addTask}>Add Task</button>
+              </div>
+            </div>
+          );
+        }
+
+        handleChange = (event) => {
+          this.setState({
+            input: event.target.value,
+          });
+        };
+
+        addTask = () => {
+          this.setState((state) => ({
+            tasks: [...state.tasks, state.input],
+            input: "",
+          }));
+        };
+
+        deleteTask = (e) => {
+          const index = e.target.parentNode.getAttribute("data-index");
+          const list = this.state.tasks;
+          list.splice(index, 1);
+          this.setState({
+            tasks: list,
+          });
+        };
+      }
+
+      class App extends React.Component {
+        render() {
+          return <ToDo />;
+        }
+      }
+      ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+  </body>
+</html>

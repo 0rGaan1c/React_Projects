@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>Counter with Classes</title>
+  </head>
+  <body>
+    <style>
+      h1 {
+        color: lightseagreen;
+      }
+      button {
+        color: #333;
+      }
+    </style>
+
+    <div id="app" style="text-align: center"></div>
+
+    <script type="text/babel">
+      class Counter extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            count: 0,
+          };
+        }
+
+        render() {
+          return (
+            <div>
+              <h1>{this.state.count}</h1>
+              <button onClick={this.increment}>Increment</button>
+              <button onClick={this.decrement}>Decrement</button>
+              <button onClick={this.reset}>Reset</button>
+            </div>
+          );
+        }
+
+        increment = () => {
+          this.setState((state) => ({
+            count: state.count + 1,
+          }));
+        };
+
+        decrement = () => {
+          if (this.state.count != 0) {
+            this.setState((state) => ({
+              count: state.count - 1,
+            }));
+          }
+        };
+
+        reset = () => {
+          this.setState({
+            count: 0,
+          });
+        };
+      }
+
+      class App extends React.Component {
+        render() {
+          return <Counter />;
+        }
+      }
+
+      ReactDOM.render(<App />, document.querySelector("#app"));
+    </script>
+  </body>
+</html>
