@@ -4,7 +4,7 @@
 
 **1. CounterApp-Classes**
 * A very simple counter app made using React classes.
-&nbsp;
+&nbsp;&nbsp;
 
 __2. CounterApp-Classes__
 * A Todo app made using React classes.
