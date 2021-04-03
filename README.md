@@ -1,5 +1,4 @@
 # React Projects
-&nbsp;
 ### Projects I am building while learning React.  
 &nbsp;
 
