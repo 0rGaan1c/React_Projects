@@ -1,5 +1,6 @@
 # React Projects
-### Projects I am building while learning React.__
+
+### Projects I am building while learning React.
 
 **1. CounterApp-Classes**
 * A very simple counter app made using React classes.
