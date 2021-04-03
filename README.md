@@ -2,7 +2,7 @@
 ### Projects I am building while learning React.  
 &nbsp;
 
-**1. CounterApp-Classes**
+**1. [CounterApp-Classes](https://github.com/0rGaan1c/React_Projects/tree/main/1.CounterApp-Classes).**
 * A very simple counter app made using React classes.
 &nbsp;
 
