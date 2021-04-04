@@ -17,3 +17,8 @@
 **4. [A Good Looking Todo App](https://github.com/0rGaan1c/React_Projects/tree/main/4.ImprovedToDo)**
 * Again, A todomap but with more features this time.
 
+**4. [FanWiki](https://github.com/0rGaan1c/React_Projects/tree/main/5.fanwiki)**
+* A Naruto FanWiki app which list out all the characters of Naruto anime series.
+* It's a very basic version with very basic design and might have a lot of bugs.
+* If you have any suggestion please let me know.
+* I might improve this app in the future.
