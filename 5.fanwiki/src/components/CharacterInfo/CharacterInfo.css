@@ -1,0 +1,18 @@
+.sep-info {
+  width: 80%;
+  margin: auto;
+  margin-top: 6.25rem;
+}
+
+.content {
+  display: flex;
+}
+
+.content p {
+  padding-left: 100px;
+  font-weight: 700;
+}
+
+.content img {
+  border-radius: 12px;
+}
