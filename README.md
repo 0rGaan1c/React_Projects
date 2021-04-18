@@ -22,3 +22,7 @@
 * It's a very basic version with very basic design and might have a lot of bugs.
 * If you have any suggestion please let me know.
 * I might improve this app in the future.
+
+**6. [Pokédex](https://github.com/0rGaan1c/React_Projects/tree/main/6.pokedex)**
+* A simple Pokedex app.
+* This project is quite similar to the fanwiki.
