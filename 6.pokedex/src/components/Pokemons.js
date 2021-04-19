@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import Heading from "./Heading";
 
 const Pokemons = () => {
   const [url, setUrl] = useState("https://pokeapi.co/api/v2/pokemon/");
@@ -50,15 +52,15 @@ const Pokemons = () => {
   }
   return (
     <div>
-      <ol style={{ display: "flex", flexWrap: "wrap" }}>
+      <Heading />
+      <ol>
         {pokemons.map((pokemon, index) => {
           return (
-            <li
-              key={index}
-              style={{ display: "flex", border: "2px solid red" }}
-            >
-              {pokemon.name} <img src={pokemon.image} alt={pokemon.name} />
-            </li>
+            <Link key={index} to={`/${pokemon.id}/${pokemon.name}`}>
+              <li key={index}>
+                {pokemon.name} <img src={pokemon.image} alt={pokemon.name} />
+              </li>
+            </Link>
           );
         })}
       </ol>
