@@ -1,0 +1,9 @@
+.header {
+  font-family: "Signika", sans-serif;
+  color: red;
+  margin-bottom: 2.5rem;
+}
+
+.header_h1 {
+  font-size: 3rem;
+}

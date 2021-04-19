@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Heading from "./Heading";
+import styles from "./pokemon.module.css";
 
 const Pokemon = ({
   match: {
@@ -23,21 +24,23 @@ const Pokemon = ({
   }
 
   return (
-    <div>
+    <>
       <Heading />
-      <h1>{pokemonData.name}</h1>
-      <img
-        src={pokemonData.sprites.other.dream_world.front_default}
-        alt={pokemonData.name}
-      />
-      <h3>Experience {pokemonData.base_experience}</h3>
-      <h3>Weight {pokemonData.weight}</h3>
-      <h3>Height {pokemonData.height}</h3>
-      <h3>Moves</h3>
-      {pokemonData.moves.map((move, index) => {
-        return <span key={index}>{move.move.name} </span>;
-      })}
-    </div>
+      <div className={styles.main}>
+        <img
+          src={pokemonData.sprites.other.dream_world.front_default}
+          alt={pokemonData.name}
+        />
+        <h1>{pokemonData.name}</h1>
+        <h3>Experience {pokemonData.base_experience}</h3>
+        <h3>Weight {pokemonData.weight}</h3>
+        <h3>Height {pokemonData.height}</h3>
+        <h3>Moves</h3>
+        {pokemonData.moves.map((move, index) => {
+          return <span key={index}>{move.move.name}, </span>;
+        })}
+      </div>
+    </>
   );
 };
 
