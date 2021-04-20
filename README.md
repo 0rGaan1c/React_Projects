@@ -29,4 +29,4 @@
 
 **7. [Weather](https://github.com/0rGaan1c/React_Projects/tree/main/6.weather)**
 * A simple weather app.
-* I learned about useRef becuase I didn't wanted the useEffect hook to run on initial render.
+* I learned about useRef while building this project and used it to not run useEffect hook on initial render.
