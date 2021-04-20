@@ -26,3 +26,7 @@
 **6. [Pokédex](https://github.com/0rGaan1c/React_Projects/tree/main/6.pokedex)**
 * A simple Pokedex app.
 * This project is quite similar to the fanwiki.
+
+**7. [Weather](https://github.com/0rGaan1c/React_Projects/tree/main/6.weather)**
+* A simple weather app.
+* I learned about useRef becuase I didn't wanted the useEffect hook to run on initial render.
