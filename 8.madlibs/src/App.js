@@ -1,6 +1,9 @@
 import React, { useState } from "react";
-import { __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED } from "react-dom";
 import Input from "./Input";
+import { countries } from "./countries";
+import { adjectivesList } from "./adjectives";
+import { nounsList } from "./nounsList";
+import plur from "plur";
 
 const App = () => {
   const [noun, setNoun] = useState("");
@@ -14,7 +17,6 @@ const App = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(false);
-    console.log(noun, nouns, noun1, place, adjective);
   };
 
   const reset = () => {
@@ -43,6 +45,30 @@ const App = () => {
     } else if (attribute === "noun2") {
       setNoun2(value);
     }
+  };
+
+  const randomNumber = (length) => {
+    return Math.floor(Math.random() * length);
+  };
+
+  const random = () => {
+    const randomPlace = randomNumber(countries.length);
+    setPlace(countries[randomPlace].country);
+
+    const randomAdjective = randomNumber(adjectivesList.length);
+    setAdjective(adjectivesList[randomAdjective]);
+
+    const randomNoun = randomNumber(nounsList.length);
+    setNoun(nounsList[randomNoun]);
+
+    const randomNoun1 = randomNumber(nounsList.length);
+    setNoun1(nounsList[randomNoun1]);
+
+    const randomNoun2 = randomNumber(nounsList.length);
+    setNoun2(nounsList[randomNoun2]);
+
+    const randomNouns = randomNumber(nounsList.length);
+    setNouns(plur(nounsList[randomNouns], 4));
   };
 
   return (
@@ -79,9 +105,12 @@ const App = () => {
         </div>
         <button type="submit">MadLibs</button>
       </form>
-      <div class="btn">
+      <div className="btn">
         <button type="submit" onClick={reset}>
           Reset
+        </button>
+        <button type="submit" onClick={random}>
+          Random
         </button>
       </div>
       {!loading ? (
