@@ -44,3 +44,9 @@
 
 - A Mad Libs game.
 - I learned how to pass functions as props and how to dynamically update objects.
+
+**9. [CovidTracker](https://github.com/0rGaan1c/React_Projects/tree/main/9.covidtracker)**
+
+- A web app which shows the COVID-19 stats.
+- I learned about Material UI, chartjs.
+- Made with the help of this [Tutorial](https://www.youtube.com/watch?v=khJlrj3Y6Ls&t=4s)
