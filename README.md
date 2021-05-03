@@ -50,3 +50,9 @@
 - A web app which shows the COVID-19 stats.
 - I learned about Material UI, chartjs.
 - Made with the help of this [Tutorial](https://www.youtube.com/watch?v=khJlrj3Y6Ls&t=4s)
+
+**10. [TailwindReact](https://github.com/0rGaan1c/React_Projects/tree/main/10.tailwind-react)
+
+- Learned how to setup and use tailwind css in a react app.
+- Create a very simple page using tailwind css.
+- Made with the help of this [Tutorial](https://www.youtube.com/watch?v=gOQ31Kc8H5E&t=323s)
