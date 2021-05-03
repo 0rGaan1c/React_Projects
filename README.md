@@ -1,6 +1,6 @@
 # React Projects
 
-### Projects I am building while learning React.
+### Projects I am building while learning React
 
 &nbsp;
 
