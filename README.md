@@ -56,3 +56,9 @@
 - Learned how to setup and use tailwind css in a react app.
 - Create a very simple page using tailwind css.
 - Made with the help of this [Tutorial](https://www.youtube.com/watch?v=gOQ31Kc8H5E&t=323s)
+
+**11. [FirebaseAuth](https://github.com/0rGaan1c/React_Projects/tree/main/11.firebase-auth)**
+
+- Learned how to do authentication using firebase.
+- Also learned about the useContext() hook in the process.
+- Made with the help of this [Tutorial](https://www.youtube.com/watch?v=PKwu15ldZ7k&t=2s)
